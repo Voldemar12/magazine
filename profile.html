@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Профиль</title>
+<style>
+     body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #96c0bb;
+            padding: 20px;
+        }
+ .dd {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+ .kkk {
+    margin-right: 20px;
+  }
+
+ .log, .log1, .log2 {
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+ .qqq, .qqq1 {
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+ .qqq select, .qqq1 select {
+    font-size: 15px;
+    width: 100%;
+    height: 40px;
+    color: #362722;
+    border: 2px solid #362722;
+  }
+</style>
+</head>
+<body>
+<div class="dd">
+    <div class="kkk"><img src="avatarprofile.jpg" width="210px"></div>
+    <div>
+        <div class="log"><input type="text" placeholder="Логин"></div>
+        <div class="log1"><input type="text" placeholder="e-mail"></div>
+        <div class="log2"><input type="text" placeholder="Телефон"></div>
+        <div class="qqq"><select name="guests">
+            <option value="1">Платежная карта</option>
+            <option value="2">****22</option>
+            <option value="3">****97</option>
+            <option value="4">****04</option>
+            <option value="5">Добавить новую карту</option>
+        </select></div> 
+        <div class="qqq1"><select name="guests1">
+            <option value="1">Язык</option>
+            <option value="2">Русский</option>
+            <option value="3">Английский</option>
+            <option value="4">Якутский</option>
+            <option value="6">Китайский</option>
+            <option value="5">Выбрать другой язык</option>
+        </select></div>
+    </div>
+</div>
+
+<div class="log3"><input type="text" placeholder="Накопительные баллы"></div>
+<div class="change-password">
+    <button>Изменить пароль</button>
+</div>
+</body>
+</html>

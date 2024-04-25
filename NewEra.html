@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Application</title>
+        <style>
+            body {
+                background-color: #D2E9D1;
+            }
+            
+            .rectangle {
+                background-color: #96C0BB;
+                color: #333;
+                text-align: center;
+                padding: 20px;
+            }
+            
+            .center {
+                text-align: center;
+            }
+            
+            .center img {
+                max-width: 100%;
+                height: auto;
+            }
+        
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+                margin: 20px;
+            }
+        
+            .box {
+                background-color: #003C51;
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+        
+            .trends {
+                text-align: center;
+                margin-top: 20px;
+            }
+        
+            .row {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+        
+            .square {
+                text-align: center;
+                padding: 10px;
+                border: 2px solid #003C51;
+                border-radius: 10px;
+                margin: 10px;
+                display: inline-block;
+            }
+            body {
+                background-color: #D2E9D1;
+            }
+            
+            .rectangle {
+                background-color: #96C0BB;
+                color: #333;
+                text-align: center;
+                padding: 20px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            
+            .center {
+                text-align: center;
+            }
+            
+            .center img {
+                max-width: 100%;
+                height: auto;
+            }
+        
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+                margin: 20px;
+            }
+        
+            .box {
+                background-color: #003C51;
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+        
+            .trends {
+                text-align: center;
+                margin-top: 20px;
+            }
+        
+            .row {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+        
+            .square {
+                text-align: center;
+                padding: 10px;
+                border: 2px solid #003C51;
+                border-radius: 10px;
+                margin: 10px;
+                display: inline-block;
+            }
+        
+            .icon {
+                cursor: pointer;
+                margin: 0 10px;
+            }
+            .rectangle {
+                background-color: #96C0BB;
+                color: #333;
+                text-align: center;
+                padding: 20px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            
+            .center {
+                text-align: center;
+            }
+            
+            .center img {
+                max-width: 100%;
+                height: auto;
+            }
+        
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+                margin: 20px;
+            }
+        
+            .box {
+                background-color: #003C51;
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+        
+            .trends {
+                text-align: center;
+                margin-top: 20px;
+            }
+        
+            .row {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+        
+            .square {
+                text-align: center;
+                padding: 10px;
+                border: 2px solid #003C51;
+                border-radius: 10px;
+                margin: 10px;
+                display: inline-block;
+            }
+        
+            .icon {
+                cursor: pointer;
+                margin: 0 10px;
+            }
+        
+            .icon img {
+                width: 50px;
+                height: 50px;
+            }
+            .rectangle {
+                background-color: #96C0BB;
+                color: #333;
+                text-align: center;
+                padding: 20px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            
+            .center {
+                text-align: center;
+            }
+            
+            .center img {
+                max-width: 100%;
+                height: auto;
+            }
+        
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+                margin: 20px;
+            }
+        
+            .box {
+                background-color: #003C51;
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+        
+            .trends {
+                text-align: center;
+                margin-top: 20px;
+            }
+        
+            .row {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+        
+            .square {
+                text-align: center;
+                padding: 10px;
+                border: 2px solid #003C51;
+                border-radius: 10px;
+                margin: 10px;
+                display: inline-block;
+            }
+        
+            .square img {
+                max-width: 100%;
+                height: auto;
+                max-height: 150px;
+            }
+            .menu-icon {
+                cursor: pointer;
+                margin: 10px;
+            }
+        
+            .dropdown {
+                position: absolute;
+                background-color: #003C51;
+                color: #fff;
+                padding: 10px;
+                display: none;
+            }
+        
+            .menu-icon img {
+                width: 30px;
+                height: 30px;
+            }
+        
+            .search-icon {
+                cursor: pointer;
+                margin: 10px;
+            }
+        
+            .notification-icon {
+                cursor: pointer;
+                margin: 10px;
+            }
+        
+            .search-icon img,
+            .notification-icon img {
+                width: 30px;
+                height: 30px; 
+            }
+        
+            .rectangle {
+                background-color: #96C0BB;
+                color: #333;
+                text-align: center;
+                padding: 20px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+        
+            .center {
+                text-align: center;
+            }
+        
+            .center img {
+                max-width: 100%;
+                height: auto;
+            }
+        
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+                margin: 20px;
+            }
+        
+            .box {
+                background-color: #003C51;
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+        
+            .trends {
+                text-align: center;
+                margin-top: 20px;
+            }
+        
+            .row {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+        
+            .square {
+                text-align: center;
+                padding: 10px;
+                border: 2px solid #003C51;
+                border-radius: 10px;
+                margin: 10px;
+                display: inline-block;
+            }
+        
+            .square img {
+                max-width: 100%;
+                height: auto;
+                max-height: 150px;
+            }
+            .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            justify-content: center;
+            margin-top: 50px;
+          }
+          .box {
+            background-color: #2e6444; /* Тёмно-зелёный цвет фона */
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            text-decoration: none; /* Добавляем стиль для ссылок */
+            color: #fff; /* Белый цвет текста */
+          }
+          .trends {
+                text-align: center;
+                padding: 20px;
+            }
+        
+            .row {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+        
+            .square {
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                width: 200px;
+            }
+        
+            .square img {
+                width: 150px;
+                height: 150px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+        
+            .square p {
+                font-size: 16px;
+                margin: 0;
+            }
+        
+            .buy-button {
+                margin-top: 20px;
+            }
+        
+            .buy-button button {
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        
+            .back-button {
+                display: block;
+                text-align: center;
+                margin-top: 20px;
+                text-decoration: none;
+                color: #333;
+            }
+            .pp {
+        position: relative;
+        width: 370px;
+        margin: 0 auto;
+    }
+    input {
+        margin-top: 10px;
+        transform: translateX(-7px);
+        width: 100%;
+        height: 42px;
+        padding-left: 10px;
+        border: 2px solid #362722;
+        border-radius: 10px;
+        outline: none;
+        background: #FFFFFF;
+        color: #362722;
+    }
+    button {
+        position: absolute;
+        top: 18px;
+        right: 0px;
+        width: 42px;
+        height: 30px;
+        border: none;
+        background: #FFFFFF;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+    }
+    button:before {
+        content: "\f002";
+        font-family: FontAwesome;
+        font-size: 20px;
+        color: #56826F;
+    }
+        </style>
+        </head>
+        <div class="rectangle">
+            <h1>Новая Эра</h1>
+        </div>
+        
+        <div class="center">
+            <img src="era.jpg" alt="Your Image">
+        </div>
+        <div>
+            <div class="menu-icon" onclick="toggleDropdown()">
+                <img src="menu-icon.png" alt="Menu Icon">
+            </div>
+            <div class="dropdown" id="dropdown">
+                <p>Партнёры</p>
+                <p>Контакты</p>
+                <p>Помощь</p>
+            </div>
+            <div class="search-icon">
+                <img src="search-icon.png" alt="Search Icon">
+            </div>
+            <div class="notification-icon">
+                <img src="notification-icon.png" alt="Notification Icon">
+            </div>
+        </div>
+        
+        <div class="rectangle">
+            <!-- Icons and content as per previous example -->
+        </div>
+        
+        <script>
+            function toggleDropdown() {
+                var dropdown = document.getElementById("dropdown");
+                if (dropdown.style.display === "block") {
+                    dropdown.style.display = "none";
+                } else {
+                    dropdown.style.display = "block";
+                }
+            }
+        </script>
+        <div class="pp">
+            <input type="text" placeholder="Искать здесь...">
+            <button type="submit"></button>
+        </div>
+        <div class="grid">
+            <a href="capsules.html" class="box">Капсулы</a>
+            <a href="tablets.html" class="box">Таблетки</a>
+            <a href="powder.html" class="box">Порошок</a>
+            <a href="tea.html" class="box">Чай</a>
+            <a href="coffe.html" class="box">Кофе</a>
+            <a href="pasta.html" class="box">Паста</a>
+            <a href="ointment.html" class="box">Мазь</a>
+            <a href="plasters.html" class="box">Пластыри</a>
+            <a href="gels.html" class="box">Гели</a>
+          </div>
+        
+          <div class="trends">
+            <h2>ТРЕНДЫ</h2>
+            <div class="row">
+                <div class="square" onclick="window.location.href='informacia.html'">
+                    <img src="lek.jpg" alt="Image 1">
+                    <p>Лекарство от боли в спине</p>
+                </div>
+                <div class="square" onclick="window.location.href='informacia.html'">
+                    <img src="lekarstva.png" alt="Image 2">
+                    <p>Лекарство здоровья</p>
+                </div>
+                <div class="square" onclick="window.location.href='informacia.html'">
+                    <img src="lekarstva3.png" alt="Image 3">
+                    <p>Таблетка от боли в суставах</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="square" onclick="window.location.href='informacia.html'">
+                    <img src="lekarstva2.png" alt="Image 4">
+                    <p>Лекарство для мышц</p>
+                </div>
+                <div class="square" onclick="window.location.href='informacia.html'">
+                    <img src="lekarstva5.png" alt="Image 5">
+                    <p>Таблетка для сердца</p>
+                </div>
+                <div class="square" onclick="window.location.href='informacia.html'">
+                    <img src="lekarstva4.png" alt="Image 6">
+                    <p>Таблетка для здоровья</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="square" onclick="window.location.href='informacia.html'">
+                    <img src="lekarstva.png" alt="Image 7">
+                    <p>Мазь от морщин</p>
+                </div>
+                <div class="square" onclick="window.location.href='informacia.html'">
+                    <img src="lekarstva6.png" alt="Image 8">
+                    <p>Таблетки для здоровья</p>
+                </div>
+                <div class="square" onclick="window.location.href='informacia.html'">
+                    <img src="lekarstva7.jpg" alt="Image 9">
+                    <p>Лекарство от боли в горле</p>
+                </div>
+            </div>
+            <div class="buy-button">
+                <button onclick="window.location.href='korzinka.html'">Купить</button>
+            </div>
+            <a href="javascript:history.back()" class="back-button">Назад</a>
+        </div>
+        
+        <div class="rectangle">
+            <div class="icon" onclick="window.location.href='home.html'">
+                <img src="home-icon.png" alt="Home Icon">
+            </div>
+            <div class="icon" onclick="window.location.href='favorites.html'">
+                <img src="hearts-icon.png" alt="Favorites Icon">
+            </div>
+            <div class="icon" onclick="window.location.href='korzinka.html'">
+                <img src="cart-icon.png" alt="Cart Icon">
+            </div>
+            <div class="icon" onclick="window.location.href='profile.html'">
+                <img src="profile-icon.png" alt="Profile Icon">
+            </div>
+        </div>
+        
+        <!-- Your application content goes here -->
+        
+        </body>
+</html>
+<head>
+</head>

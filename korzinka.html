@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Корзина с китайскими лекарствами</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #e0f4f4;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .top-rectangle, .bottom-rectangle {
+        background-color: #145214;
+        height: 30px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+    }
+
+    .top-rectangle {
+        top: 0;
+    }
+
+    .bottom-rectangle {
+        bottom: 0;
+    }
+
+    .cart {
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        z-index: 2;
+    }
+
+    h1 {
+        color: #145214;
+        font-size: 24px; 
+        margin-bottom: 10px; 
+    }
+
+    .item {
+        margin: 15px; 
+        padding: 10px; 
+        border: 2px solid #145214;
+        border-radius: 10px; 
+        width: 90%;
+        display: inline-block;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+    }
+
+    .item img {
+        width: 20%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .item p {
+        font-size: 18px;
+        margin: 10px 0;
+        color: #145214;
+    }
+
+    .item-info {
+        font-size: 14px;
+        color: #333;
+        padding: 5px;
+    }
+
+    .checkout-button {
+        margin-top: 20px;
+    }
+
+    .checkout-button button {
+        padding: 15px 30px;
+        background-color: #145214;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: background-color 0.3s;
+    }
+
+    .checkout-button button:hover {
+        background-color: #0c3a0c;
+    }
+
+    .back-button {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        text-decoration: none;
+        color: #145214;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .back-button a {
+        padding: 8px 15px; 
+        background-color: #145214;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+    .back-button a:hover {
+        background-color: #0c3a0c;
+    }
+</style>
+</head>
+<body>
+<div class="top-rectangle"></div>
+<div class="bottom-rectangle"></div>
+<div class="cart">
+    <h1>Корзина с китайскими лекарствами</h1>
+    <div class="item">
+        <img src="lek.jpg" alt="Chinese Medicine 1">
+        <p>Китайское лекарство 1</p>
+        <div class="item-info">
+            <p>Описание: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et libero ipsum.</p>
+            <p>Цена: $19.99</p>
+            <p>Наличие: В наличии</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="lekarstva.png" alt="Chinese Medicine 2">
+        <p>Китайское лекарство 2</p>
+        <div class="item-info">
+            <p>Описание: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et l ibero ipsum.</p>
+            <p>Цена: $24.99</p>
+            <p>Наличие: В наличии</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="lekarstva2.png" alt="Chinese Medicine 3">
+        <p>Китайское лекарство 3</p>
+        <div class="item-info">
+            <p>Описание: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et libero ipsum.</p>
+            <p>Цена: $29.99</p>
+            <p>Наличие: В наличии</p>
+        </div>
+    </div>
+    
+    <!-- Add more items as needed -->
+    <div class="checkout-button">
+        <button>Оформить заказ</button>
+    </div>
+    <div class="back-button">
+        <a href="javascript:history.back()">Назад</a>
+    </div>
+</div>
+</body>
+</html>
